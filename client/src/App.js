@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import ListContacts from './components/ListContacts'
 import CreateContactForm from './components/CreateContactForm'
+import AppBar from './components/AppBar'
 
 class App extends Component {
   state = {
-    display: false,
+    screen: 'list',
     contacts: [
       {
         id: 'Patrick',
@@ -26,8 +27,11 @@ class App extends Component {
       },
     ],
   }
+  handleNavigation = () => {
+    this.setState({ screen: 'create' })
+  }
 
-  remove = id => {
+  handleRemoveContact = id => {
     this.setState(prevState => ({
       contacts: prevState.contacts.filter(contact => contact.id !== id),
     }))
@@ -35,30 +39,15 @@ class App extends Component {
   render() {
     return (
       <div className="min-h-screen bg-gray-100 text-gray-700 text-xl">
-        <div
-          id="app-bar"
-          className="bg-white flex  justify-between items-center px-8 mb-4"
-        >
-          <div className="flex items-center">
-            <label className="mr-1" htmlFor="search">
-              <span className="cursor-pointer text-4xl icon icon-search" />
-            </label>
-            <input
-              type="text"
-              className="px-2 py-1"
-              placeholder="Search contacts"
-              name="search"
-              id="search"
-            />
-          </div>
-          <span
-            className=" cursor-pointer text-4xl
-            icon icon-user-plus"
-          />
-        </div>
+        <AppBar onNavigate={this.handleNavigation} />
         <div id="content" className="container px-8 lg:px-0 mx-auto">
-          <ListContacts contacts={this.state.contacts} action={this.remove} />
-          {this.state.display && <CreateContactForm />}
+          {this.state.screen === 'list' && (
+            <ListContacts
+              contacts={this.state.contacts}
+              action={this.handleRemoveContact}
+            />
+          )}
+          {this.state.screen === 'create' && <CreateContactForm />}
         </div>
       </div>
     )
