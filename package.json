@@ -5,6 +5,10 @@
   "repository": "git@github.com:bitwhys/react-nanodegree.git",
   "author": "George Bockari <bitwhys@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start:server": "yarn --cwd backend start",
+    "start:client": "yarn --cwd client start"
+  },
   "devDependencies": {
     "prettier": "^2.0.5"
   }

@@ -1,0 +1,29 @@
+@tailwind base;
+
+@tailwind components;
+
+.contact-card + .contact-card {
+    @apply mt-3;
+}
+
+/* For CSS-Transition Group */
+.user-enter {
+  opacity: 0;
+}
+
+.user-enter-active {
+  opacity: 1;
+  transition: all 500ms ease-in;
+}
+
+.user-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.user-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 500ms ease-out;
+}
+@tailwind utilities;
