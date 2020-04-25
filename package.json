@@ -1,0 +1,11 @@
+{
+  "name": "react-nanodegree",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "git@github.com:bitwhys/react-nanodegree.git",
+  "author": "George Bockari <bitwhys@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
+}
