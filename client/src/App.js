@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ListContacts from './components/ListContacts'
+import CreateContactForm from './components/CreateContactForm'
 
 class App extends Component {
   state = {
@@ -34,10 +35,13 @@ class App extends Component {
   render() {
     return (
       <div className="min-h-screen bg-gray-100 text-gray-700 text-xl">
-        <div className="bg-white flex  justify-between items-center px-8 mb-4">
+        <div
+          id="app-bar"
+          className="bg-white flex  justify-between items-center px-8 mb-4"
+        >
           <div className="flex items-center">
-            <label className="mr-1">
-              <span className="text-4xl icon icon-search" />
+            <label className="mr-1" htmlFor="search">
+              <span className="cursor-pointer text-4xl icon icon-search" />
             </label>
             <input
               type="text"
@@ -52,8 +56,9 @@ class App extends Component {
             icon icon-user-plus"
           />
         </div>
-        <div className="container px-8 lg:px-0 mx-auto">
+        <div id="content" className="container px-8 lg:px-0 mx-auto">
           <ListContacts contacts={this.state.contacts} action={this.remove} />
+          {this.state.display && <CreateContactForm />}
         </div>
       </div>
     )
