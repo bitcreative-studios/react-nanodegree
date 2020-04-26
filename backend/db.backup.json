@@ -1,0 +1,91 @@
+{
+  "contacts": [
+    {
+      "name": "Patrick Mahomes",
+      "handle": "knight_king_chiefsKingdom",
+      "avatarURL": "http://localhost:5001/pat.jpg"
+    },
+    {
+      "name": "Jane Jackson",
+      "handle": "jj_black.majick",
+      "avatarURL": "http://localhost:5001/jane.jpg"
+    },
+    {
+      "name": "Jill Scott",
+      "handle": "beautifulCoder",
+      "avatarURL": "http://localhost:5001/jill.jpg"
+    },
+    {
+      "name": "George Bockari",
+      "handle": "bitwhys",
+      "avatarURL": "",
+      "id": "cfdb1e22-df5c-4c81-b2f4-a7826f837eca"
+    },
+    {
+      "name": "George Bockari",
+      "handle": "bitwhys",
+      "avatarURL": "",
+      "id": "baac1556-c087-4e3e-82de-6e304478eb47"
+    },
+    {
+      "name": "George Bockari",
+      "handle": "bitwhys",
+      "avatarURL": "",
+      "id": "165ef3ed-8ed2-48a9-b59b-045190c04511"
+    },
+    {
+      "name": "George Bockari",
+      "handle": "bitwhys",
+      "avatarURL": "",
+      "id": "ea96302b-ac07-43f8-961c-d5cc41df839d"
+    },
+    {
+      "name": "George Bockari",
+      "handle": "bitwhys",
+      "avatarURL": "",
+      "id": "a68c3fdf-f4a9-4578-95b5-4d0c3cf16820"
+    },
+    {
+      "name": "George Bockari",
+      "handle": "bitwhys",
+      "avatarURL": "",
+      "id": "680343f1-bda2-4cff-b789-3978e2fe5768"
+    },
+    {
+      "name": "George Bockari",
+      "handle": "bitwhys",
+      "avatarURL": "",
+      "id": "6851e812-78ea-46ae-aa59-3243a558a2cb"
+    },
+    {
+      "name": "George Bockari",
+      "handle": "bitwhys",
+      "avatarURL": "",
+      "id": "407895a6-c9f8-4c9b-b790-95cf944625a4"
+    },
+    {
+      "name": "George Bockari",
+      "handle": "bitwhys",
+      "avatarURL": "",
+      "id": "49dda4c7-66e9-470d-a6c9-884142371253"
+    },
+    {
+      "name": "George Bockari",
+      "handle": "bitwhys",
+      "avatarURL": "",
+      "id": "b89e8121-a022-4498-9fbf-51e003000393"
+    },
+    {
+      "name": "George Bockari",
+      "handle": "bitwhys",
+      "avatarURL": "",
+      "id": "760bdcc8-5972-4f98-813b-b3040e934394"
+    },
+    {
+      "name": "George Bockari",
+      "handle": "bitwhys",
+      "avatarURL": "",
+      "id": "0104f069-d397-45f7-9f89-2c6d080a2c40"
+    }
+  ]
+}

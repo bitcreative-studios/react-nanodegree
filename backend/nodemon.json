@@ -1,0 +1,7 @@
+{
+  "restartable": "rs",
+  "runOnChangeOnly": false,
+  "exec": "node server.js",
+  "ext": "js",
+  "ignore": ["db.json"]
+}

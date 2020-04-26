@@ -1,11 +1,12 @@
 // because we have a proxy in our package.json file, we don't need this
 // const api = process.env.REACT_APP_CONTACTS_API_URL || 'http://localhost:5001';
 
-let token = localStorage.token
+let token = localStorage['RND-CONTACT-APP-TOKEN']
 
 if (!token)
   // Nice little hack to generate random string (/[0-9a-z]{8}/)
-  token = localStorage.token = Math.random().toString(36).substr(-8)
+  token = localStorage['RND-CONTACT-APP-TOKEN'] =
+    process.env.REACT_APP_CONTACT_API_TOKEN
 
 const headers = {
   Accept: 'application/json',
@@ -20,7 +21,7 @@ export const getAll = () =>
 export const remove = contact =>
   fetch(`/contacts/${contact.id}`, { method: 'DELETE', headers })
     .then(res => res.json())
-    .then(data => data.contact)
+    .then(data => data.contacts)
 
 export const create = body =>
   fetch(`/contacts`, {

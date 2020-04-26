@@ -12,7 +12,7 @@ class App extends Component {
 
   componentDidMount() {
     // const contacts = []
-    getAll().then(contacts => this.setState({ contacts }))
+    // getAll().then(contacts => this.setState({ contacts }))
   }
 
   handleRemoveContact = id => {
@@ -27,6 +27,7 @@ class App extends Component {
     this.setState(prevState => ({ contacts: [...prevState.contacts, payload] }))
   }
   render() {
+    console.log(process.env.REACT_APP_CONTACT_API_TOKEN)
     const { contacts } = this.state
     return (
       <div className="min-h-screen bg-gray-100 text-gray-700 text-xl">

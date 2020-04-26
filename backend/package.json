@@ -6,12 +6,21 @@
   "author": "George Bockari <bitwhys@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
     "clone": "^2.1.2",
     "cors": "^2.8.5",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "lodash": "^4.17.15",
+    "lodash-id": "^0.14.0",
+    "lowdb": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/lodash": "^4.14.150",
+    "@types/lowdb": "^1.0.9",
+    "nodemon": "^2.0.3"
   }
 }

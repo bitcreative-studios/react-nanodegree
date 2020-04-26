@@ -1,0 +1,37 @@
+{
+  "contacts": [
+    {
+      "name": "Patrick Mahomes",
+      "handle": "knight_king_chiefsKingdom",
+      "avatarURL": "http://localhost:5001/pat.jpg"
+    },
+    {
+      "name": "Jane Jackson",
+      "handle": "jj_black.majick",
+      "avatarURL": "http://localhost:5001/jane.jpg"
+    },
+    {
+      "name": "Jill Scott",
+      "handle": "beautifulCoder",
+      "avatarURL": "http://localhost:5001/jill.jpg"
+    },
+    {
+      "name": "George Bockari",
+      "handle": "bitwhys",
+      "avatarURL": "",
+      "id": "4b6510da-e9b5-4837-83b0-23ebfc4281ee"
+    },
+    {
+      "name": "George Bockari",
+      "handle": "bitwhys",
+      "avatarURL": "",
+      "id": "19ab4b29-034e-4f30-8209-1fc32f893cf7"
+    },
+    {
+      "name": "George Bockari",
+      "handle": "bitwhys",
+      "avatarURL": "",
+      "id": "2daf04a5-eb7b-4ab0-ab8a-012d91483010"
+    }
+  ]
+}
