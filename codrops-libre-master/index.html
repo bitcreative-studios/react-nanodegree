@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="styles/tailwind.generated.css" />
     <link rel="stylesheet" href="node_modules/tippy.js/dist/themes/light.css" />
   </head>
-  <body class="bg-grey-lighter font-sans antialiased">
+  <body class="bg-gray-100 font-sans antialiased">
     <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
@@ -28,7 +28,7 @@
       </p>
     <![endif]-->
     <div
-      class="fixed bg-grey-lighter pin z-50 flex justify-center items-center"
+      class="fixed bg-gray-100 pin z-50 flex justify-center items-center"
       id="loading"
     >
       <svg
@@ -71,7 +71,7 @@
         </g>
       </svg>
     </div>
-    <div class="bg-indigo-darker text-center p-4 px-6 flex items-center">
+    <div class="bg-indigo-900 text-center p-4 px-6 flex items-center">
       <div class="hidden lg:block lg:w-1/4 xl:w-1/5 pr-8">
         <a href="#" class="flex justify-start pl-6">
           <img src="./images/logo.svg" class="" alt="logo" />
@@ -85,7 +85,7 @@
           <input
             type="search"
             placeholder="Search"
-            class="w-full text-sm text-white transition border border-transparent focus:outline-none focus:border-indigo placeholder-white rounded bg-indigo-medium py-1 px-2 pl-10 appearance-none leading-normal ds-input"
+            class="w-full text-sm text-white transition border border-transparent focus:outline-none focus:border-indigo placeholder-white rounded bg-indigo-800 py-1 px-2 pl-10 appearance-none leading-normal ds-input"
           />
           <div class="absolute search-icon" style="top: 0.5rem; left: 0.8rem;">
             <svg
@@ -101,7 +101,7 @@
         </span>
         <a
           href="https://tympanus.net/codrops/?p=35739"
-          class="text-sm text-right text-white py-2 px-3 hover:text-grey-dark no-underline hidden lg:block lg:w-1/3 px-6"
+          class="text-sm text-right text-white py-2 px-3 hover:text-gray-500 no-underline hidden lg:block lg:w-1/3 px-6"
           >Back to Codrops</a
         >
       </div>
@@ -110,7 +110,7 @@
     <div class="flex">
       <!-- Side Nav -->
       <nav
-        class="absolute lg:relative lg:flex lg:text-sm bg-indigo-darker lg:bg-transparent pin-l pin-r py-4 px-6 lg:pt-10 lg:pl-12 lg:pr-6 -mt-1 lg:mt-0 overflow-y-auto lg:w-1/5 lg:border-r z-40 hidden"
+        class="absolute lg:relative lg:flex lg:text-sm bg-indigo-900 lg:bg-transparent pin-l right-0 py-4 px-6 lg:pt-10 lg:pl-12 lg:pr-6 -mt-1 lg:mt-0 overflow-y-auto lg:w-1/5 lg:border-r z-40 hidden"
       >
         <ul class="list-reset mb-8 w-full">
           <li class="ml-2 mb-4 flex">
@@ -120,7 +120,7 @@
               class="w-4 h-4 mr-2"
             />
             <div
-              class="hover:cursor-pointer text-white lg:text-indigo-darkest no-underline font-medium mobile-home-trigger"
+              class="hover:cursor-pointer text-white lg:text-indigo-800 no-underline font-medium mobile-home-trigger"
             >
               Home
             </div>
@@ -133,11 +133,11 @@
                 class="w-4 h-4 mr-2"
               />
               <div
-                class="hover:cursor-pointer text-white lg:text-indigo-darkest no-underline font-medium w-full relative"
+                class="hover:cursor-pointer text-white lg:text-indigo-800 no-underline font-medium w-full relative"
               >
                 Categories
                 <div
-                  class="pointer-events-none absolute pin-y pin-r flex items-center px-1 text-grey-darker"
+                  class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-1 text-gray-600"
                   id="sidenav-icon"
                 >
                   <svg
@@ -153,40 +153,40 @@
               </div>
             </div>
             <ul
-              class="text-grey lg:text-grey-dark list-reset leading-loose mt-2"
+              class="text-gray-600 lg:text-gray-dark list-reset leading-loose mt-2"
               id="sidenav-categories"
             >
               <li
-                class="hover:text-indigo-dark hover:cursor-pointer transition-normal ml-1 border-l border-grey-dark pl-4"
+                class="hover:text-indigo-600 hover:cursor-pointer transition duration-150 ml-1 border-l border-grey-dark pl-4"
               >
                 Fiction
               </li>
               <li
-                class="hover:text-indigo-dark hover:cursor-pointer transition-normal ml-1 border-l border-grey-dark pl-4"
+                class="hover:text-indigo-600 hover:cursor-pointer transition duration-150 ml-1 border-l border-grey-dark pl-4"
               >
                 Nonfiction
               </li>
               <li
-                class="hover:text-indigo-dark hover:cursor-pointer transition-normal ml-1 border-l border-grey-dark pl-4"
+                class="hover:text-indigo-600 hover:cursor-pointer transition duration-150 ml-1 border-l border-grey-dark pl-4"
               >
                 Lifestyle
               </li>
               <li
-                class="hover:text-indigo-dark hover:cursor-pointer transition-normal ml-1 border-l border-grey-dark pl-4"
+                class="hover:text-indigo-600 hover:cursor-pointer transition duration-150 ml-1 border-l border-grey-dark pl-4"
               >
                 Health &amp; Fitness
               </li>
               <li
-                class="text-indigo-lighter lg:text-indigo-darker font-medium flex justify-between items-center hover:cursor-pointer transition-normal ml-1 border-l border-grey-dark pl-4 mobile-home-trigger"
+                class="text-indigo-300 lg:text-indigo-800 font-medium flex justify-between items-center hover:cursor-pointer transition duration-150 ml-1 border-l border-grey-dark pl-4 mobile-home-trigger"
               >
                 <span>Art & Design</span>
                 <span
-                  class="bg-indigo-dark text-white text-xs rounded-full px-2 leading-normal"
+                  class="bg-indigo-700 text-white text-xs rounded-full px-2 leading-normal"
                   >7</span
                 >
               </li>
               <li
-                class="hover:text-indigo-dark hover:cursor-pointer transition-normal ml-1 border-l border-grey-dark pl-4"
+                class="hover:text-indigo-600 hover:cursor-pointer transition duration-150 ml-1 border-l border-grey-dark pl-4"
               >
                 Music
               </li>
@@ -199,7 +199,7 @@
               class="w-4 h-4 mr-2"
             />
             <div
-              class="hover:cursor-pointer text-white lg:text-indigo-darkest no-underline font-medium mobile-home-trigger"
+              class="hover:cursor-pointer text-white lg:text-indigo-800 no-underline font-medium mobile-home-trigger"
             >
               Wishlist
             </div>
@@ -211,7 +211,7 @@
               class="w-4 h-4 mr-2"
             />
             <div
-              class="hover:cursor-pointer text-white lg:text-indigo-darkest no-underline font-medium"
+              class="hover:cursor-pointer text-white lg:text-indigo-800 no-underline font-medium"
               id="mobile-profile-trigger"
             >
               Profile
@@ -224,11 +224,11 @@
         <!-- Title -->
         <div class="px-6 md:px-0 flex justify-between items-center -order-1">
           <div>
-            <h2 class="font-normal">Art &amp; Design</h2>
-            <p class="text-grey-dark mt-2">Interesting Stats</p>
+            <h2 class="text-2xl">Art &amp; Design</h2>
+            <p class="text-gray-600 mt-2">Interesting Stats</p>
           </div>
           <button
-            class="bg-indigo-dark hover:bg-indigo-darker text-white text-sm py-2 px-4 rounded-full transition-normal hover:shadow hover:translate-y-1 active:translate-y-1 focus:outline-none"
+            class="bg-indigo-700 hover:bg-indigo-900 text-white text-sm py-2 px-4 rounded-full transition duration-150 hover:shadow hover:translate-y-1 active:translate-y-1 focus:outline-none"
           >
             Add New Book
           </button>
@@ -243,7 +243,7 @@
           >
             <h4>Your favourite authors in this category</h4>
             <table class="mt-4 w-full">
-              <thead class="p-2 text-sm leading-loose border-b text-indigo">
+              <thead class="p-2 text-sm leading-loose border-b text-indigo-500">
                 <tr>
                   <td>Name</td>
                   <td class="text-center">Owned/Wishlist</td>
@@ -274,18 +274,18 @@
           >
             <div class="flex">
               <div class="w-1/2">
-                <p class="text-indigo text-sm p-2">Most read format</p>
+                <p class="text-indigo-500 text-sm p-2">Most read format</p>
                 <p class="font-medium text-sm pl-2">Print</p>
               </div>
               <div class="w-1/2">
-                <p class="text-indigo text-sm p-2">Total read/own</p>
+                <p class="text-indigo-500 text-sm p-2">Total read/own</p>
                 <p class="font-medium text-sm pl-2">4/7</p>
               </div>
             </div>
             <div class="pt-6">
-              <p class="text-indigo text-sm p-2">Most re-read book</p>
+              <p class="text-indigo-500 text-sm p-2">Most re-read book</p>
               <p class="font-medium text-sm pl-2 leading-normal">
-                Just My Type: A Book About Fonts <br /><span class="font-normal"
+                Just My Type: A Book About Fonts <br /><span class=""
                   >by Simon Garfield</span
                 >
               </p>
@@ -296,349 +296,55 @@
         <div
           class="px-6 md:px-0 flex items-baseline justify-between border-b-2 border-grey-light mt-6 order-0 lg:order-1"
         >
-          <h4 class="hidden md:inline-block text-grey-dark font-normal">
+          <h4 class="hidden md:inline-block text-gray-600">
             Books
           </h4>
           <div>
             <div
-              class="inline-block md:hidden no-underline border-indigo pb-2 px-2 text-sm mr-2 text-indigo-darkest hover:cursor-pointer js-tab relative"
+              class="inline-block md:hidden no-underline border-indigo pb-2 px-2 text-sm mr-2 text-indigo-800 hover:cursor-pointer js-tab relative"
               data-tab="section-stats"
             >
               Stats
             </div>
             <div
-              class="no-underline inline-block border-indigo pb-2 px-2 text-sm mr-2 text-indigo-darkest hover:cursor-pointer js-tab active relative"
+              class="no-underline inline-block border-indigo pb-2 px-2 text-sm mr-2 text-indigo-800 hover:cursor-pointer js-tab active relative"
               data-tab="section-library"
             >
-              Library <span class="text-indigo text-xs">(7)</span>
+              Library <span class="text-indigo-500 text-xs">(7)</span>
             </div>
             <div
-              class="no-underline inline-block border-indigo pb-2 px-2 text-sm text-indigo-darkest hover:cursor-pointer js-tab relative"
+              class="no-underline inline-block border-indigo pb-2 px-2 text-sm text-indigo-800 hover:cursor-pointer js-tab relative"
               data-tab="section-picks"
             >
               Picks for you
             </div>
           </div>
         </div>
-        <!-- Library -->
+        <!-- Filter -->
         <div
-          class="hidden px-2 pt-2 md:px-0 flex-wrap order-2 pb-8 js-tab-pane active"
-          id="section-library"
+          class="px-6 md:px-0 flex items-baseline justify-between border-b-2 border-grey-light mt-6 order-0 lg:order-1"
         >
-          <div
-            class="flex flex-row sm:flex-col items-center sm:items-start w-full xs:w-1/2 sm:w-1/3 md:w-1/5 p-4 js-book"
-          >
-            <img
-              src="./images/book-01.jpg"
-              alt="book-01"
-              class="w-1/3 sm:w-full shadow-md transition-normal hover:brighter hover:translate-y-1 hover:shadow-lg hover:border-indigo"
-            />
-            <div class="ml-3 sm:ml-0 w-2/3 sm:w-full">
-              <p class="text-sm my-2 font-medium sm:font-normal">
-                apartmento Aug 2018
-              </p>
-              <p class="block sm:hidden mt-2 mb-3 text-sm leading-medium">
-                Eu quo donec pellentesque, urna velit. Ultrices ante iaculis
-                ligula praesent.
-              </p>
-              <label
-                for=""
-                class="hidden sm:inline-block rounded-full bg-libre-grey text-white px-2 py-1/2 text-xs"
-                >Loaned</label
-              >
-              <div class="block sm:hidden relative">
-                <select
-                  class="block appearance-none w-full text-sm bg-white border border-grey-light hover:border-grey pl-3 py-1 pr-8 rounded shadow leading-normal focus:outline-none focus:shadow-outline"
-                >
-                  <option>Start</option>
-                  <option>Loaned</option>
-                  <option selected>Finished</option>
-                </select>
-                <div
-                  class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker"
-                >
-                  <svg
-                    class="fill-current h-4 w-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                    />
-                  </svg>
-                </div>
-              </div>
+          <h4 class="hidden md:inline-block text-gray-600">
+            Books
+          </h4>
+          <div>
+            <div
+              class="inline-block md:hidden no-underline border-indigo pb-2 px-2 text-sm mr-2 text-indigo-800 hover:cursor-pointer js-tab relative"
+              data-tab="section-stats"
+            >
+              Stats
             </div>
-          </div>
-          <div
-            class="flex flex-row sm:flex-col items-center sm:items-start w-full xs:w-1/2 sm:w-1/3 md:w-1/5 p-4"
-          >
-            <img
-              src="./images/book-02.jpg"
-              alt="book-02"
-              class="w-1/3 sm:w-full shadow-md transition-normal hover:brighter hover:translate-y-1 hover:shadow-lg hover:border-indigo js-book"
-            />
-            <div class="ml-3 sm:ml-0 w-2/3 sm:w-full">
-              <p class="text-sm my-2 font-medium sm:font-normal">
-                Popeye Aug 2018
-              </p>
-              <p class="block sm:hidden mt-2 mb-3 text-sm leading-medium">
-                Eu quo donec pellentesque, urna velit. Ultrices ante iaculis
-                ligula praesent.
-              </p>
-              <label
-                for=""
-                class="hidden sm:inline-block rounded-full bg-libre-yellow text-white px-2 py-1/2 text-xs"
-                >Started</label
-              >
-              <div class="block sm:hidden relative">
-                <select
-                  class="block appearance-none w-full text-sm bg-white border border-grey-light hover:border-grey pl-3 py-1 pr-8 rounded shadow leading-normal focus:outline-none focus:shadow-outline"
-                >
-                  <option>Start</option>
-                  <option>Loaned</option>
-                  <option>Reading</option>
-                  <option selected>Finished</option>
-                </select>
-                <div
-                  class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker"
-                >
-                  <svg
-                    class="fill-current h-4 w-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                    />
-                  </svg>
-                </div>
-              </div>
+            <div
+              class="no-underline inline-block border-indigo pb-2 px-2 text-sm mr-2 text-indigo-800 hover:cursor-pointer js-tab active relative"
+              data-tab="section-library"
+            >
+              Library <span class="text-indigo-500 text-xs">(7)</span>
             </div>
-          </div>
-          <div
-            class="flex flex-row sm:flex-col items-center sm:items-start w-full xs:w-1/2 sm:w-1/3 md:w-1/5 p-4"
-          >
-            <img
-              src="./images/book-03.jpg"
-              alt="book-03"
-              class="w-1/3 sm:w-full shadow-md transition-normal hover:brighter hover:translate-y-1 hover:shadow-lg hover:border-indigo js-book"
-            />
-            <div class="ml-3 sm:ml-0 w-2/3 sm:w-full">
-              <p class="text-sm my-2 font-medium sm:font-normal">
-                Brutus Aug 2018
-              </p>
-              <p class="block sm:hidden mt-2 mb-3 text-sm leading-medium">
-                Eu quo donec pellentesque, urna velit. Ultrices ante iaculis
-                ligula praesent.
-              </p>
-              <label
-                for=""
-                class="hidden sm:inline-block rounded-full bg-libre-pink text-white px-2 py-1/2 text-xs"
-                >Reading</label
-              >
-              <div class="block sm:hidden relative">
-                <select
-                  class="block appearance-none w-full text-sm bg-white border border-grey-light hover:border-grey pl-3 py-1 pr-8 rounded shadow leading-normal focus:outline-none focus:shadow-outline"
-                >
-                  <option>Start</option>
-                  <option>Loaned</option>
-                  <option selected>Finished</option>
-                </select>
-                <div
-                  class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker"
-                >
-                  <svg
-                    class="fill-current h-4 w-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex flex-row sm:flex-col items-center sm:items-start w-full xs:w-1/2 sm:w-1/3 md:w-1/5 p-4"
-          >
-            <img
-              src="./images/book-04.jpg"
-              alt="book-04"
-              class="w-1/3 sm:w-full shadow-md transition-normal hover:brighter hover:translate-y-1 hover:shadow-lg hover:border-indigo js-book"
-            />
-            <div class="ml-3 sm:ml-0 w-2/3 sm:w-full">
-              <p class="text-sm my-2 font-medium sm:font-normal">
-                Harnako Aug 2018
-              </p>
-              <p class="block sm:hidden mt-2 mb-3 text-sm leading-medium">
-                Eu quo donec pellentesque, urna velit. Ultrices ante iaculis
-                ligula praesent.
-              </p>
-              <label
-                for=""
-                class="hidden sm:inline-block rounded-full bg-indigo text-white px-2 py-1/2 text-xs"
-                >Finished</label
-              >
-              <div class="block sm:hidden relative">
-                <select
-                  class="block appearance-none w-full text-sm bg-white border border-grey-light hover:border-grey pl-3 py-1 pr-8 rounded shadow leading-normal focus:outline-none focus:shadow-outline"
-                >
-                  <option>Start</option>
-                  <option>Loaned</option>
-                  <option selected>Finished</option>
-                </select>
-                <div
-                  class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker"
-                >
-                  <svg
-                    class="fill-current h-4 w-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex flex-row sm:flex-col items-center sm:items-start w-full xs:w-1/2 sm:w-1/3 md:w-1/5 p-4"
-          >
-            <img
-              src="./images/book-05.jpg"
-              alt="book-05"
-              class="w-1/3 sm:w-full shadow-md transition-normal hover:brighter hover:translate-y-1 hover:shadow-lg hover:border-indigo js-book"
-            />
-            <div class="ml-3 sm:ml-0 w-2/3 sm:w-full">
-              <p class="text-sm my-2 font-medium sm:font-normal">
-                Premium 2 2018
-              </p>
-              <p class="block sm:hidden mt-2 mb-3 text-sm leading-medium">
-                Eu quo donec pellentesque, urna velit. Ultrices ante iaculis
-                ligula praesent.
-              </p>
-              <label
-                for=""
-                class="hidden sm:inline-block rounded-full bg-indigo text-white px-2 py-1/2 text-xs"
-                >Finished</label
-              >
-              <div class="block sm:hidden relative">
-                <select
-                  class="block appearance-none w-full text-sm bg-white border border-grey-light hover:border-grey pl-3 py-1 pr-8 rounded shadow leading-normal focus:outline-none focus:shadow-outline"
-                >
-                  <option>Start</option>
-                  <option>Loaned</option>
-                  <option selected>Finished</option>
-                </select>
-                <div
-                  class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker"
-                >
-                  <svg
-                    class="fill-current h-4 w-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex flex-row sm:flex-col items-center sm:items-start w-full xs:w-1/2 sm:w-1/3 md:w-1/5 p-4"
-          >
-            <img
-              src="./images/book-06.jpg"
-              alt="book-06"
-              class="w-1/3 sm:w-full shadow-md transition-normal hover:brighter hover:translate-y-1 hover:shadow-lg hover:border-indigo js-book"
-            />
-            <div class="ml-3 sm:ml-0 w-2/3 sm:w-full">
-              <p class="text-sm my-2 font-medium sm:font-normal">
-                Premium 4 2018
-              </p>
-              <p class="block sm:hidden mt-2 mb-3 text-sm leading-medium">
-                Eu quo donec pellentesque, urna velit. Ultrices ante iaculis
-                ligula praesent.
-              </p>
-              <label
-                for=""
-                class="hidden sm:inline-block rounded-full bg-indigo text-white px-2 py-1/2 text-xs"
-                >Finished</label
-              >
-              <div class="block sm:hidden relative">
-                <select
-                  class="block appearance-none w-full text-sm bg-white border border-grey-light hover:border-grey pl-3 py-1 pr-8 rounded shadow leading-normal focus:outline-none focus:shadow-outline"
-                >
-                  <option>Start</option>
-                  <option>Loaned</option>
-                  <option selected>Finished</option>
-                </select>
-                <div
-                  class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker"
-                >
-                  <svg
-                    class="fill-current h-4 w-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex flex-row sm:flex-col items-center sm:items-start w-full xs:w-1/2 sm:w-1/3 md:w-1/5 p-4"
-          >
-            <img
-              src="./images/book-07.jpg"
-              alt="book-07"
-              class="w-1/3 sm:w-full shadow-md transition-normal hover:brighter hover:translate-y-1 hover:shadow-lg hover:border-indigo js-book"
-            />
-            <div class="ml-3 sm:ml-0 w-2/3 sm:w-full">
-              <p class="text-sm my-2 font-medium sm:font-normal">
-                Brutus Aug 2018
-              </p>
-              <p class="block sm:hidden mt-2 mb-3 text-sm leading-medium">
-                Eu quo donec pellentesque, urna velit. Ultrices ante iaculis
-                ligula praesent.
-              </p>
-              <label
-                for=""
-                class="hidden sm:inline-block rounded-full bg-libre-pink text-white px-2 py-1/2 text-xs"
-                >Reading</label
-              >
-              <div class="block sm:hidden relative">
-                <select
-                  class="block appearance-none w-full text-sm bg-white border border-grey-light hover:border-grey pl-3 py-1 pr-8 rounded shadow leading-normal focus:outline-none focus:shadow-outline"
-                >
-                  <option>Start</option>
-                  <option>Loaned</option>
-                  <option selected>Finished</option>
-                </select>
-                <div
-                  class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker"
-                >
-                  <svg
-                    class="fill-current h-4 w-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                    />
-                  </svg>
-                </div>
-              </div>
+            <div
+              class="no-underline inline-block border-indigo pb-2 px-2 text-sm text-indigo-800 hover:cursor-pointer js-tab relative"
+              data-tab="section-picks"
+            >
+              Picks for you
             </div>
           </div>
         </div>
@@ -659,7 +365,7 @@
                 ligula praesent
               </p>
               <button
-                class="shadow-md mt-3 bg-grey-lightest hover:bg-white text-indigo-darker text-xs py-2 px-4 rounded-full transition-normal hover:shadow hover:translate-y-1 active:translate-y-1 focus:outline-none"
+                class="shadow-md mt-3 bg-gray-100 hover:bg-white text-indigo-500-700 text-xs py-2 px-4 rounded-full transition duration-150 hover:shadow hover:translate-y-1 active:translate-y-1 focus:outline-none"
               >
                 Add to Wishlist
               </button>
@@ -677,7 +383,7 @@
                 eros eget maecenas, ullamcorper vitae.
               </p>
               <button
-                class="shadow-md mt-3 bg-grey-lightest hover:bg-white text-indigo-darker text-xs py-2 px-4 rounded-full transition-normal hover:shadow hover:translate-y-1 active:translate-y-1 focus:outline-none"
+                class="shadow-md mt-3 bg-gray-100 hover:bg-white text-indigo-700 text-xs py-2 px-4 rounded-full transition duration-150 hover:shadow hover:translate-y-1 active:translate-y-1 focus:outline-none"
               >
                 Add to Wishlist
               </button>
@@ -695,7 +401,7 @@
                 maecenas, ullamcorper vitae.
               </p>
               <button
-                class="shadow-md mt-3 bg-grey-lightest hover:bg-white text-indigo-darker text-xs py-2 px-4 rounded-full transition-normal hover:shadow hover:translate-y-1 active:translate-y-1 focus:outline-none"
+                class="shadow-md mt-3 bg-gray-100 hover:bg-white text-indigo-700 text-xs py-2 px-4 rounded-full transition duration-150 hover:shadow hover:translate-y-1 active:translate-y-1 focus:outline-none"
               >
                 Add to Wishlist
               </button>
@@ -713,7 +419,7 @@
                 ligula praesent
               </p>
               <button
-                class="shadow-md mt-3 bg-grey-lightest hover:bg-white text-indigo-darker text-xs py-2 px-4 rounded-full transition-normal hover:shadow hover:translate-y-1 active:translate-y-1 focus:outline-none"
+                class="shadow-md mt-3 bg-gray-100 hover:bg-white text-indigo-700 text-xs py-2 px-4 rounded-full transition duration-150 hover:shadow hover:translate-y-1 active:translate-y-1 focus:outline-none"
               >
                 Add to Wishlist
               </button>
@@ -723,7 +429,7 @@
       </div>
       <!-- Profile -->
       <div
-        class="hidden absolute pin-b z-10 lg:relative lg:block w-full lg:w-1/5 bg-grey-lighter-2 px-6 pt-10"
+        class="hidden absolute pin-b z-10 lg:relative lg:block w-full lg:w-1/5 bg-gray-200 px-6 pt-10"
         id="profile"
       >
         <div class="flex items-center mb-6">
@@ -768,49 +474,49 @@
           </svg>
           <div class="ml-3">
             <p>Amie Chen</p>
-            <p class="text-grey-dark mt-1 text-sm">Joined since 2017</p>
+            <p class="text-gray-dark mt-1 text-sm">Joined since 2017</p>
           </div>
         </div>
         <div class="my-4 border-t pt-4">
-          <h3 class="text-indigo-dark font-normal">
+          <h3 class="text-indigo-600">
             You have read <strong>4 of 30 books</strong> in 2018
           </h3>
           <div class="flex flex-wrap -ml-2 justify-start items-center">
             <img
               src="./images/read-01.jpg"
               alt="read"
-              class="w-1/6 lg:w-1/5 max-w-tiny shadow-md block m-2 transition-normal hover:brighter"
+              class="w-1/6 lg:w-1/5 max-w-tiny shadow-md block m-2 transition duration-150 hover:brighter"
             />
             <img
               src="./images/read-02.jpg"
               alt="read"
-              class="w-1/6 lg:w-1/5 max-w-tiny shadow-md block m-2 transition-normal hover:brighter"
+              class="w-1/6 lg:w-1/5 max-w-tiny shadow-md block m-2 transition duration-150 hover:brighter"
             />
             <img
               src="./images/read-03.jpg"
               alt="read"
-              class="w-1/6 lg:w-1/5 max-w-tiny shadow-md block m-2 transition-normal hover:brighter"
+              class="w-1/6 lg:w-1/5 max-w-tiny shadow-md block m-2 transition duration-150 hover:brighter"
             />
             <img
               src="./images/read-04.jpg"
               alt="read"
-              class="w-1/6 lg:w-1/5 max-w-tiny shadow-md block m-2 transition-normal hover:brighter"
+              class="w-1/6 lg:w-1/5 max-w-tiny shadow-md block m-2 transition duration-150 hover:brighter"
             />
           </div>
         </div>
         <div class="mt-6">
-          <p class="text-grey-dark mt-1 text-sm">Currently Reading</p>
+          <p class="text-gray-dark mt-1 text-sm">Currently Reading</p>
           <div class="flex items-start mt-2">
             <img
               src="./images/read-04.jpg"
               alt="read"
-              class="w-1/6 lg:w-1/5 max-w-tiny shadow-md block transition-normal hover:brighter"
+              class="w-1/6 lg:w-1/5 max-w-tiny shadow-md block transition duration-150 hover:brighter"
             />
             <div class="ml-3">
               <p class="mt-1 leading-normal">
                 Popular Lies* About Graphic Design
               </p>
-              <p class="text-indigo text-sm mt-1">15/250 pages</p>
+              <p class="text-indigo-500 text-sm mt-1">15/250 pages</p>
             </div>
           </div>
         </div>
@@ -832,7 +538,7 @@
           <option selected>Finished</option>
         </select>
         <div
-          class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker"
+          class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-600"
         >
           <svg
             class="fill-current h-4 w-4"
