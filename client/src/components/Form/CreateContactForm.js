@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
+import serialize from 'form-serialize'
 import ImageInput from './ImageInput'
 import FormField from './FormField'
 
@@ -23,8 +24,8 @@ const submitBaseClasses = [
 ]
 class CreateContactForm extends Component {
   state = {
-    fullName: '',
-    twitterHandle: '',
+    name: '',
+    handle: '',
   }
 
   handleFormInput = evt => {
@@ -35,13 +36,10 @@ class CreateContactForm extends Component {
   }
   handleSubmit = evt => {
     evt.preventDefault()
+    const values = serialize(evt.target, { hash: true })
+    console.log(values)
     const { onSubmit } = this.props
-    const payload = {}
-    payload.name = this.state.fullName
-    payload.id = Math.random().toString(36).substr(-11)
-    payload.handle = this.state.twitterHandle
-    payload.avatarURL = null
-    onSubmit(payload)
+    onSubmit(values)
     this.setState({ fullName: '', twitterHandle: '' })
   }
   render() {
@@ -54,23 +52,29 @@ class CreateContactForm extends Component {
         <div className="mb-4">
           <FormField
             label="Full Name"
-            name="fullName"
+            name="name"
             isRequired
             placeholder="Jane Doe"
-            value={this.state.fullName}
+            value={this.state.name}
             onChange={handleFormInput}
           />
         </div>
         <div className="mb-6">
           <FormField
             label="Twitter Handle"
-            name="twitterHandle"
+            name="handle"
             errorMessage="You have to enter a full name"
             placeholder="@jane_doey-eyes"
-            value={this.state.twitterHandle}
+            value={this.state.handle}
             onChange={handleFormInput}
           />
         </div>
+        <input type="hidden" name="avatarUrl" value="fake" />
+        <input
+          type="hidden"
+          name="id"
+          value={Math.random().toString(36).substr(-11)}
+        />
         <div className="flex items-center justify-between">
           <input
             type="submit"
@@ -78,7 +82,6 @@ class CreateContactForm extends Component {
             value="Add Contact"
           />
         </div>
-        <ImageInput />
       </form>
     )
   }
