@@ -6,7 +6,7 @@ const BackArrow = () => (
   <span
     id="add-user"
     className="cursor-pointer
-     icon icon-cheveron-left text-gray-300
+     icon icon-cheveron-left text-gray-400 text-3xl
      hover:text-teal-500 transition duration-150"
   />
 )

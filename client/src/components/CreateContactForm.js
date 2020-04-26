@@ -45,7 +45,8 @@ class CreateContactForm extends Component {
             type="submit"
             className="cursor-pointer bg-transparent hover:bg-teal-500
               text-teal-700 font-semibold hover:text-white py-2 px-4 border
-              border-teal-500 focus:outline-none hover:border-transparent rounded"
+              border-teal-500 focus:outline-none hover:border-transparent rounded
+              transition duration-150"
             value="Add Contact"
           />
         </div>
