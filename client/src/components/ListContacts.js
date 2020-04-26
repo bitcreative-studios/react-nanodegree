@@ -7,7 +7,6 @@ class ListContacts extends Component {
   // Describe the UI of component
   render() {
     const { contacts, action } = this.props
-    console.log(contacts)
     return (
       <ul className="contact-list">
         <TransitionGroup>

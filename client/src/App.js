@@ -33,6 +33,11 @@ class App extends Component {
       contacts: prevState.contacts.filter(contact => contact.id !== id),
     }))
   }
+
+  handleSubmit = evt => {
+    evt.preventDefault()
+    console.log('----- DEBUG [@handleSubmit] -----')
+  }
   render() {
     const { contacts } = this.state
     return (
@@ -40,7 +45,7 @@ class App extends Component {
         <AppBar />
         <div id="content" className="container px-8 lg:px-0 mx-auto">
           <Route path="/create">
-            <CreateContactForm />
+            <CreateContactForm onSubmit={this.handleSubmit} />
           </Route>
           <Route path="/" exact>
             <ListContacts

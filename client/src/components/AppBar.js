@@ -5,7 +5,7 @@ import { Link, withRouter } from 'react-router-dom'
 const BackArrow = () => (
   <span
     id="add-user"
-    className="cursor-pointer text-4xl
+    className="cursor-pointer
      icon icon-cheveron-left text-gray-300
      hover:text-teal-500 transition duration-150"
   />
@@ -14,7 +14,7 @@ const BackArrow = () => (
 const AddNewContact = () => (
   <span
     id="add-user"
-    className="cursor-pointer text-4xl
+    className="cursor-pointer
      icon icon-user-plus text-gray-300
      hover:text-teal-500 transition duration-150"
   />
@@ -23,7 +23,7 @@ const AddNewContact = () => (
 const SearchInput = () => (
   <div className="flex items-center">
     <label className="mr-1" htmlFor="search">
-      <span className="cursor-pointer text-4xl icon icon-search" />
+      <span className="cursor-pointer icon icon-search" />
     </label>
     <input
       type="text"
@@ -38,22 +38,21 @@ const SearchInput = () => (
 const AppBar = ({ location }) => {
   const { pathname } = location
   return (
-    <div
-      id="app-bar"
-      className="bg-white flex justify-between items-center px-8 mb-4"
-    >
-      {(pathname === '/' && (
-        <>
-          <SearchInput />
-          <Link to="/create" className="focus:outline-none">
-            <AddNewContact />
+    <div id="app-bar" className="bg-white mb-4 text-2xl lg:text-4xl">
+      <div className="container px-8 lg:px-0 mx-auto flex justify-between items-center ">
+        {(pathname === '/' && (
+          <>
+            <SearchInput />
+            <Link to="/create" className="focus:outline-none">
+              <AddNewContact />
+            </Link>
+          </>
+        )) || (
+          <Link to="/">
+            <BackArrow />
           </Link>
-        </>
-      )) || (
-        <Link to="/">
-          <BackArrow />
-        </Link>
-      )}
+        )}
+      </div>
     </div>
   )
 }
