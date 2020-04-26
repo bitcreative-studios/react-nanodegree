@@ -10,9 +10,9 @@ Make sure your local version is v6+. I currently am using v10.8 as of Aug 2018.
 npm install
 ```
 
-If you want to regenerate css with your changes, run this command to generate css using tailwind config (e.g. tailwind.js)
+If you want to regenerate css with your changes, run this command to generate css using tailwind config (e.g. tailwind-old.js)
 ```
-$ ./node_modules/.bin/tailwind build style.css -c ./tailwind.js -o ./output.css
+$ ./node_modules/.bin/tailwind build style.css -c ./tailwind-old.js -o ./output.css
 ```
 
 If you want to recompile the javascript, make sure browserify is installed globally then run this command to create bundle.js
