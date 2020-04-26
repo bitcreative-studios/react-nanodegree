@@ -612,26 +612,6 @@ video {
 
 /* For CSS-Transition Group */
 
-.user-enter {
-  opacity: 0;
-}
-
-.user-enter-active {
-  opacity: 1;
-  transition: all 500ms ease-in;
-}
-
-.user-exit {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.user-exit-active {
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: all 500ms ease-out;
-}
-
 .space-y-0 > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--space-y-reverse)));

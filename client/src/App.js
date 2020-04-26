@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 import ListContacts from './components/ListContacts'
-import CreateContactForm from './components/CreateContactForm'
+import CreateContactForm from './components/Form'
 import AppBar from './components/AppBar'
 
 class App extends Component {
@@ -34,9 +34,9 @@ class App extends Component {
     }))
   }
 
-  handleSubmit = evt => {
-    evt.preventDefault()
+  handleSubmit = payload => {
     console.log('----- DEBUG [@handleSubmit] -----')
+    console.log('form submit payload: ', payload)
   }
   render() {
     const { contacts } = this.state

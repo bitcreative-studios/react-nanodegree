@@ -1,44 +1,38 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ImageInput from './ImageInput'
+import FormField from './FormField'
 
 class CreateContactForm extends Component {
+  state = {}
+  handleSubmit = evt => {
+    evt.preventDefault()
+    const { onSubmit } = this.props
+    const payload = {}
+    onSubmit(payload)
+  }
   render() {
-    const { onSubmit: handleSubmit } = this.props
+    const { handleSubmit } = this
     return (
       <form
         className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 text-lg"
         onSubmit={handleSubmit}
       >
         <div className="mb-4">
-          <label className="block   font-bold mb-2" htmlFor="full-name">
-            Full Name
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2
-              px-3  leading-tight focus:outline-none
-              focus:shadow-outline"
-            id="full-name"
-            type="text"
+          <FormField
+            label="Full Name"
+            name="full-name"
+            isRequired
             placeholder="Jane Doe"
-            required
           />
         </div>
         <div className="mb-6">
-          <label className="block   font-bold mb-2" htmlFor="twitter-handle">
-            Twitter Handle
-          </label>
-          <input
-            className="shadow appearance-none border border-red-500 rounded
-              w-full py-2 px-3  mb-3 leading-tight
-              focus:outline-none focus:shadow-outline"
-            id="twitter-handle"
-            type="text"
+          <FormField
+            label="Twitter Handle"
+            name="twitter-handle"
+            errorMessage="You have to enter a full name"
             placeholder="@jane_doey-eyes"
           />
-          <p className="text-red-500 text-xs italic">
-            Please choose a password.
-          </p>
         </div>
         <div className="flex items-center justify-between">
           <input

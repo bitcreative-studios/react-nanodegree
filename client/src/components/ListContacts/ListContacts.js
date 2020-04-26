@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
-import ContactCard from './ContactCard'
+
+import transitionStyles from './ListContacts-TransitionStyles.module.css'
+import ContactCard from '../ContactCard'
 
 class ListContacts extends Component {
   // Describe the UI of component
@@ -11,7 +13,11 @@ class ListContacts extends Component {
       <ul className="contact-list">
         <TransitionGroup>
           {contacts.map(contact => (
-            <CSSTransition key={contact.id} timeout={500} classNames="user">
+            <CSSTransition
+              key={contact.id}
+              timeout={500}
+              classNames={{ ...transitionStyles }}
+            >
               <li
                 key={contact.id}
                 className="contact-card py-2 px-3  bg-white rounded shadow"
