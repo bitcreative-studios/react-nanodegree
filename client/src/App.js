@@ -1,31 +1,18 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
+import { create, getAll } from './utils/ContactsAPI'
 import ListContacts from './components/ListContacts'
 import CreateContactForm from './components/Form'
 import AppBar from './components/AppBar'
 
 class App extends Component {
   state = {
-    contacts: [
-      {
-        id: 'Patrick',
-        name: 'Patrick Mahomes',
-        handle: 'knight_king_chiefsKingdom',
-        avatarURL: 'http://localhost:5001/pat.jpg',
-      },
-      {
-        id: 'jane',
-        name: 'Jane Jackson',
-        handle: 'jj_black.majick',
-        avatarURL: 'http://localhost:5001/jane.jpg',
-      },
-      {
-        id: 'Jill',
-        name: 'Jill Scott',
-        handle: 'beautifulCoder',
-        avatarURL: 'http://localhost:5001/jill.jpg',
-      },
-    ],
+    contacts: [],
+  }
+
+  componentDidMount() {
+    // const contacts = []
+    getAll().then(contacts => this.setState({ contacts }))
   }
 
   handleRemoveContact = id => {
@@ -36,6 +23,7 @@ class App extends Component {
 
   handleSubmit = payload => {
     console.log('----- DEBUG [@handleSubmit] -----')
+    create(payload).catch(e => console.error(e))
     this.setState(prevState => ({ contacts: [...prevState.contacts, payload] }))
   }
   render() {

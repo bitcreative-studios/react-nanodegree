@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import serialize from 'form-serialize'
-import ImageInput from './ImageInput'
 import FormField from './FormField'
 
 const submitBaseClasses = [

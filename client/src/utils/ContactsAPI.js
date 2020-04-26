@@ -14,12 +14,12 @@ const headers = {
 
 export const getAll = () =>
   fetch(`/contacts`, { headers })
-    .then(res => res.jsonp())
+    .then(res => res.json())
     .then(data => data.contacts)
 
 export const remove = contact =>
   fetch(`/contacts/${contact.id}`, { method: 'DELETE', headers })
-    .then(res => res.jsonp())
+    .then(res => res.json())
     .then(data => data.contact)
 
 export const create = body =>
