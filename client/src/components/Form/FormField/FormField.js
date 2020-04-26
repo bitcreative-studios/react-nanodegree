@@ -1,7 +1,23 @@
 import React from 'react'
+import classNames from 'classnames'
 import PropTypes from 'prop-types'
 
+const baseStyles = [
+  'shadow',
+  'appearance-none',
+  'border',
+  'rounded',
+  'w-full',
+  'py-2',
+  'px-3',
+  'mb-3',
+  'leading-tight',
+  'focus:outline-none',
+  'focus:shadow-outline',
+]
 const FormField = ({
+  value,
+  onChange,
   label,
   name,
   type = 'text',
@@ -15,14 +31,14 @@ const FormField = ({
         {label}
       </label>
       <input
-        className="shadow appearance-none border border-red-500 rounded
-         w-full py-2 px-3  mb-3 leading-tight
-         focus:outline-none focus:shadow-outline"
+        className={classNames(baseStyles)}
         id={name}
         name={name}
         type={type}
         placeholder={placeholder}
         required={isRequired}
+        value={value}
+        onChange={onChange}
       />
       <p className="text-red-500 text-xs italic">{errorMessage}</p>
     </div>

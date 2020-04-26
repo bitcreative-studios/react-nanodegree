@@ -44,7 +44,7 @@ ListContacts.propTypes = {
       id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       handle: PropTypes.string.isRequired,
-      avatarURL: PropTypes.string.isRequired,
+      avatarURL: PropTypes.string,
     })
   ).isRequired,
   action: PropTypes.func.isRequired,

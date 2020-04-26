@@ -36,7 +36,7 @@ class App extends Component {
 
   handleSubmit = payload => {
     console.log('----- DEBUG [@handleSubmit] -----')
-    console.log('form submit payload: ', payload)
+    this.setState(prevState => ({ contacts: [...prevState.contacts, payload] }))
   }
   render() {
     const { contacts } = this.state

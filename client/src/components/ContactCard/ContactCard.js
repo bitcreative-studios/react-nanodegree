@@ -8,7 +8,7 @@ const ContactCard = ({ id, name, avatar, twitterHandle, onDelete }) => {
         <div className="p-4 border-r-2 border-gray-200">
           <div
             className="h-12 w-12 rounded-full
-                  bg-center bg-cover"
+                  bg-center bg-cover bg-gray-200"
             style={{ backgroundImage: `url(${avatar})` }}
           />
         </div>
@@ -30,7 +30,7 @@ const ContactCard = ({ id, name, avatar, twitterHandle, onDelete }) => {
 ContactCard.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
+  avatar: PropTypes.string,
   twitterHandle: PropTypes.string,
   onDelete: PropTypes.func,
 }
