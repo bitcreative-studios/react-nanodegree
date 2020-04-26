@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
+import { Route } from 'react-router-dom'
 import ListContacts from './components/ListContacts'
 import CreateContactForm from './components/CreateContactForm'
 import AppBar from './components/AppBar'
 
 class App extends Component {
   state = {
-    screen: 'list',
     contacts: [
       {
         id: 'Patrick',
@@ -27,9 +27,6 @@ class App extends Component {
       },
     ],
   }
-  handleNavigation = () => {
-    this.setState({ screen: 'create' })
-  }
 
   handleRemoveContact = id => {
     this.setState(prevState => ({
@@ -37,17 +34,20 @@ class App extends Component {
     }))
   }
   render() {
+    const { contacts } = this.state
     return (
       <div className="min-h-screen bg-gray-100 text-gray-700 text-xl">
-        <AppBar onNavigate={this.handleNavigation} />
+        <AppBar />
         <div id="content" className="container px-8 lg:px-0 mx-auto">
-          {this.state.screen === 'list' && (
+          <Route path="/create">
+            <CreateContactForm />
+          </Route>
+          <Route path="/" exact>
             <ListContacts
-              contacts={this.state.contacts}
+              contacts={contacts}
               action={this.handleRemoveContact}
             />
-          )}
-          {this.state.screen === 'create' && <CreateContactForm />}
+          </Route>
         </div>
       </div>
     )

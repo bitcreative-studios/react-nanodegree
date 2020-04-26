@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import ContactCard from './ContactCard'
 
@@ -33,6 +33,16 @@ class ListContacts extends Component {
   }
 }
 
-ListContacts.propTypes = {}
+ListContacts.propTypes = {
+  contacts: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      handle: PropTypes.string.isRequired,
+      avatarURL: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  action: PropTypes.func.isRequired,
+}
 
 export default ListContacts

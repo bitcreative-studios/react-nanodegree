@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
-const AppBar = ({ onNavigate }) => {
+const AppBar = ({ route }) => {
   return (
     <div
       id="app-bar"
@@ -19,20 +20,18 @@ const AppBar = ({ onNavigate }) => {
           id="search"
         />
       </div>
-      <a href={`#create`} onClick={onNavigate} className="focus:outline-none">
+      <Link to="/create" className="focus:outline-none">
         <span
           id="add-user"
           className="cursor-pointer text-4xl
            icon icon-user-plus text-gray-300
            hover:text-teal-500 transition duration-150"
         />
-      </a>
+      </Link>
     </div>
   )
 }
 
-AppBar.propTypes = {
-  onNavigate: PropTypes.func.isRequired,
-}
+AppBar.propTypes = {}
 
 export default AppBar
