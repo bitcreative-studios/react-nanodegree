@@ -1,20 +1,5 @@
 {
-  "contacts": [
-    {
-      "name": "Patrick Mahomes",
-      "handle": "knight_king_chiefsKingdom",
-      "avatarURL": "http://localhost:5001/pat.jpg"
-    },
-    {
-      "name": "Jane Jackson",
-      "handle": "jj_black.majick",
-      "avatarURL": "http://localhost:5001/jane.jpg"
-    },
-    {
-      "name": "Jill Scott",
-      "handle": "beautifulCoder",
-      "avatarURL": "http://localhost:5001/jill.jpg"
-    },
+
     {
       "name": "George Bockari",
       "handle": "bitwhys",

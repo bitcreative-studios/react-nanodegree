@@ -27,7 +27,7 @@ class ListContacts extends Component {
                   id={contact.id}
                   name={contact.name}
                   twitterHandle={contact.handle}
-                  onDelete={action}
+                  onDelete={() => action(contact.id)}
                 />
               </li>
             </CSSTransition>

@@ -45,18 +45,18 @@ app.use((req, res, next) => {
 })
 
 app.get('/contacts', (req, res) => {
-  res.send(db.get(req.token))
+  res.send(db.get())
 })
 
 app.delete('/contacts/:id', (req, res) => {
-  res.send(db.remove(req.token, req.params.id))
+  res.send(db.remove(req.params.id))
 })
 
 app.post('/contacts', bodyParser.json(), (req, res) => {
   const { name, email } = req.body
 
   if (name && email) {
-    res.send(db.add(req.token, req.body))
+    res.send(db.add(req.body))
   } else {
     res.status(403).send({
       error: 'Please provide both a name and an email address',

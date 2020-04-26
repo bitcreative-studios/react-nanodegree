@@ -27,23 +27,24 @@ const initialContacts = [
 ]
 
 const init = token => {
-  const adapter = new FileSync(`db/data/${token}.json`)
-  db = low(adapter)
-  db._.mixin(lodashId)
-  contacts = db.defaults({ contacts: [] }).get('contacts')
+  if (!initialized) {
+    const adapter = new FileSync(`db/data/${token}.json`)
+    db = low(adapter)
+    db._.mixin(lodashId)
+    db.defaults({ contacts: [] }).write()
+    initialized = true
+  }
+  contacts = db.get('contacts')
 }
-const get = token => {
-  let data = db[token]
-  return data
+const get = () => {
+  return contacts.value()
 }
-const add = (token, contact) => {
-  // TODO: add
-  return contact
+const add = contact => {
+  return contacts.insert(contact).write()
 }
 
-const remove = (token, id) => {
-  // TODO: remove
-  return { token }
+const remove = id => {
+  return contacts.removeById(id).write()
 }
 
 module.exports = {
