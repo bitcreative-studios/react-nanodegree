@@ -12,12 +12,16 @@ class App extends Component {
   state = { books: [] }
 
   componentDidMount() {
-    getAll().then(books => console.log(books))
+    getAll().then(books => {
+      console.log(books[0])
+      this.setState({ books })
+    })
   }
 
   render() {
+    const { books } = this.state
     return (
-      <div className="bg-gray-100">
+      <div className="bg-gray-100 text-gray-800">
         <Layout>
           <Title />
           <Stats />
@@ -30,7 +34,7 @@ class App extends Component {
               <Stats />
             </Route>
             <Route path="/" exact>
-              <UserLibrary />
+              <UserLibrary books={books} />
             </Route>
           </Switch>
         </Layout>

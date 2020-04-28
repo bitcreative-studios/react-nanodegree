@@ -10,7 +10,7 @@ const SearchBar = props => {
         className="hidden lg:block lg:w-1/4 xl:w-1/5 pr-8 focus:outline-none"
       >
         {/*<a href="#" className="flex justify-start pl-6">*/}
-        <img src="./images/logo.svg" className="" alt="logo" />
+        <img src="images/logo.svg" className="" alt="logo" />
         {/*</a>*/}
       </Link>
       <div className="lg:hidden pr-3" id="mobile-nav-trigger">
