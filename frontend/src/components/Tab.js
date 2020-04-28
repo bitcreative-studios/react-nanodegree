@@ -6,13 +6,13 @@ const Tab = ({ to, text, alerts, ...props }) => {
   return (
     <NavLink to={to} {...props}>
       <div
-        className="no-underline inline-block border-indigo pb-2 px-2
-        text-sm text-indigo-800 hover:cursor-pointer js-tab active relative"
+        className="no-underline inline-block border-green pb-2 px-2
+        text-sm text-green-800 hover:cursor-pointer js-tab active relative"
         data-tab="section-library"
       >
         {text}
         {alerts && (
-          <span className="ml-1 text-indigo-500 text-xs">({alerts})</span>
+          <span className="ml-1 text-green-500 text-xs">({alerts})</span>
         )}
       </div>
     </NavLink>

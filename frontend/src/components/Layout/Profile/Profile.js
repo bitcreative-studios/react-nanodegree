@@ -16,7 +16,7 @@ const Profile = props => {
         </div>
       </div>
       <div className="my-4 border-t pt-4">
-        <h3 className="text-indigo-600">
+        <h3 className="text-green-600">
           You have read <strong>4 of 30 books</strong> in 2018
         </h3>
         <div className="flex flex-wrap -ml-2 justify-start items-center">
@@ -54,7 +54,7 @@ const Profile = props => {
             <p className="mt-1 leading-normal">
               Popular Lies* About Graphic Design
             </p>
-            <p className="text-indigo-500 text-sm mt-1">15/250 pages</p>
+            <p className="text-green-500 text-sm mt-1">15/250 pages</p>
           </div>
         </div>
       </div>

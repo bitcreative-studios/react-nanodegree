@@ -10,7 +10,7 @@ const Stats = props => {
       <div className="p-4 px-6 w-full md:w-1/2 rounded md:rounded-r-none bg-white shadow-md md:shadow-none">
         <h4>Your favourite authors in this category</h4>
         <table className="mt-4 w-full">
-          <thead className="p-2 text-sm leading-loose border-b text-indigo-500">
+          <thead className="p-2 text-sm leading-loose border-b text-green-500">
             <tr>
               <td>Name</td>
               <td className="text-center">Owned/Wishlist</td>
@@ -39,16 +39,16 @@ const Stats = props => {
       <div className="w-full md:w-1/2 p-4 md:pt-12 md:pl-1 mt-4 md:mt-0 lg:pt-12 lg:pl-8 rounded md:rounded-r-none bg-white shadow-md md:shadow-none">
         <div className="flex">
           <div className="w-1/2">
-            <p className="text-indigo-500 text-sm p-2">Most read format</p>
+            <p className="text-green-500 text-sm p-2">Most read format</p>
             <p className="font-medium text-sm pl-2">Print</p>
           </div>
           <div className="w-1/2">
-            <p className="text-indigo-500 text-sm p-2">Total read/own</p>
+            <p className="text-green-500 text-sm p-2">Total read/own</p>
             <p className="font-medium text-sm pl-2">4/7</p>
           </div>
         </div>
         <div className="pt-6">
-          <p className="text-indigo-500 text-sm p-2">Most re-read book</p>
+          <p className="text-green-500 text-sm p-2">Most re-read book</p>
           <p className="font-medium text-sm pl-2 leading-normal">
             Just My Type: A Book About Fonts <br />
             <span className="">by Simon Garfield</span>

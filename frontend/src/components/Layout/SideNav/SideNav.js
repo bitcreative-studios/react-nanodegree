@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const SideNav = props => {
   return (
     <nav
-      className="absolute lg:relative lg:flex lg:text-sm bg-indigo-900
+      className="absolute lg:relative lg:flex lg:text-sm bg-green-900
       lg:bg-transparent pin-l right-0 py-4 px-6 lg:pt-10 lg:pl-12 lg:pr-6 -mt-1
       lg:mt-0 overflow-y-auto lg:w-1/5 lg:border-r z-40 hidden"
     >
@@ -16,7 +16,7 @@ const SideNav = props => {
             className="w-4 h-4 mr-2"
           />
           <div
-            className="hover:cursor-pointer text-white lg:text-indigo-800
+            className="hover:cursor-pointer text-white lg:text-green-800
             no-underline font-medium mobile-home-trigger"
           >
             Home
@@ -30,7 +30,7 @@ const SideNav = props => {
               className="w-4 h-4 mr-2"
             />
             <div
-              className="hover:cursor-pointer text-white lg:text-indigo-800
+              className="hover:cursor-pointer text-white lg:text-green-800
               no-underline font-medium w-full relative"
             >
               Categories
@@ -55,41 +55,41 @@ const SideNav = props => {
             id="sidenav-categories"
           >
             <li
-              className="hover:text-indigo-600 hover:cursor-pointer
+              className="hover:text-green-600 hover:cursor-pointer
               transition duration-150 ml-1 border-l border-grey-dark pl-4"
             >
               Fiction
             </li>
             <li
-              className="hover:text-indigo-600 hover:cursor-pointer
+              className="hover:text-green-600 hover:cursor-pointer
               transition duration-150 ml-1 border-l border-grey-dark pl-4"
             >
               Nonfiction
             </li>
             <li
-              className="hover:text-indigo-600 hover:cursor-pointer
+              className="hover:text-green-600 hover:cursor-pointer
               transition duration-150 ml-1 border-l border-grey-dark pl-4"
             >
               Lifestyle
             </li>
             <li
-              className="hover:text-indigo-600 hover:cursor-pointer
+              className="hover:text-green-600 hover:cursor-pointer
               transition duration-150 ml-1 border-l border-grey-dark pl-4"
             >
               Health &amp; Fitness
             </li>
             <li
-              className="text-indigo-300 lg:text-indigo-800 font-medium flex
+              className="text-green-300 lg:text-green-800 font-medium flex
               justify-between items-center hover:cursor-pointer transition
               duration-150 ml-1 border-l border-grey-dark pl-4 mobile-home-trigger"
             >
               <span>Art & Design</span>
-              <span className="bg-indigo-700 text-white text-xs rounded-full px-2 leading-normal">
+              <span className="bg-green-700 text-white text-xs rounded-full px-2 leading-normal">
                 7
               </span>
             </li>
             <li
-              className="hover:text-indigo-600 hover:cursor-pointer
+              className="hover:text-green-600 hover:cursor-pointer
               transition duration-150 ml-1 border-l border-grey-dark pl-4"
             >
               Music
@@ -103,7 +103,7 @@ const SideNav = props => {
             className="w-4 h-4 mr-2"
           />
           <div
-            className="hover:cursor-pointer text-white lg:text-indigo-800
+            className="hover:cursor-pointer text-white lg:text-green-800
             no-underline font-medium mobile-home-trigger"
           >
             Wishlist
@@ -117,7 +117,7 @@ const SideNav = props => {
           />
           <div
             className="hover:cursor-pointer text-white
-              lg:text-indigo-800 no-underline font-medium"
+              lg:text-green-800 no-underline font-medium"
             id="mobile-profile-trigger"
           >
             Profile

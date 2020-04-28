@@ -14,7 +14,7 @@ const Title = props => {
         </p>
       </div>
       <button
-        className="bg-indigo-700 hover:bg-indigo-900 text-white
+        className="bg-green-700 hover:bg-green-900 text-white
             text-sm py-2 px-4 rounded-full transition duration-150
             hover:shadow hover:translate-y-1 active:translate-y-1
             focus:outline-none"

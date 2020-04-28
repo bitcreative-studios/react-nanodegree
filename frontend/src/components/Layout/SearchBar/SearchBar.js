@@ -1,14 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 const SearchBar = props => {
   return (
-    <div className="bg-indigo-900 text-center p-4 px-6 flex items-center">
-      <div className="hidden lg:block lg:w-1/4 xl:w-1/5 pr-8">
-        <a href="#" className="flex justify-start pl-6">
-          <img src="./images/logo.svg" className="" alt="logo" />
-        </a>
-      </div>
+    <div className="bg-green-900 text-center p-4 px-6 flex items-center">
+      <Link
+        to="/"
+        className="hidden lg:block lg:w-1/4 xl:w-1/5 pr-8 focus:outline-none"
+      >
+        {/*<a href="#" className="flex justify-start pl-6">*/}
+        <img src="./images/logo.svg" className="" alt="logo" />
+        {/*</a>*/}
+      </Link>
       <div className="lg:hidden pr-3" id="mobile-nav-trigger">
         <div className="toggle p-2 block">
           <span />
@@ -19,7 +23,7 @@ const SearchBar = props => {
           <input
             type="search"
             placeholder="Search"
-            className="w-full text-sm text-white transition border border-transparent focus:outline-none focus:border-indigo placeholder-white rounded bg-indigo-800 py-1 px-2 pl-10 appearance-none leading-normal ds-input"
+            className="w-full text-sm text-white transition border border-transparent focus:outline-none focus:border-green placeholder-white rounded bg-green-800 py-1 px-2 pl-10 appearance-none leading-normal ds-input"
           />
           <div
             className="absolute search-icon"
@@ -34,6 +38,12 @@ const SearchBar = props => {
             </svg>
           </div>
         </span>
+        <a
+          href="https://github.com/bitwhys/react-nanodegree"
+          className="text-sm text-right text-white py-2 px-3 hover:text-grey-dark no-underline hidden lg:block lg:w-1/3 px-6"
+        >
+          Fork On Github
+        </a>
       </div>
     </div>
   )
