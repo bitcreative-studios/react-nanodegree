@@ -9,7 +9,9 @@ const Title = props => {
     >
       <div>
         <h2 className="text-2xl">Art &amp; Design</h2>
-        <p className="text-gray-600 mt-2">Interesting Stats</p>
+        <p className="hidden lg:inline-block text-gray-600 mt-2">
+          Interesting Stats
+        </p>
       </div>
       <button
         className="bg-indigo-700 hover:bg-indigo-900 text-white

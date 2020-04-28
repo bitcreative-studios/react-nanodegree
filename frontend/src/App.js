@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import Title from './components/Title'
 import Stats from './components/Stats'
-import TabNavigation from './components/TabNavigation'
+import TabbedNavigation from './components/TabbedNavigation'
 import Recommendations from './views/Recommendations'
 import UserLibrary from './views/UserLibrary'
 
@@ -13,10 +13,13 @@ function App() {
       <Layout>
         <Title />
         <Stats />
-        <TabNavigation />
+        <TabbedNavigation />
         <Switch>
           <Route path="/recommendations">
             <Recommendations />
+          </Route>
+          <Route path="/stats">
+            <Stats />
           </Route>
           <Route path="/" exact>
             <UserLibrary />

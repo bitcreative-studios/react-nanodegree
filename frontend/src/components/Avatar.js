@@ -6,8 +6,6 @@ const Avatar = props => {
   return (
     <Anime>
       <svg
-        onMouseEnter={() => {}}
-        onMouseLeave={() => {}}
         width="60px"
         height="60px"
         viewBox="0 0 60 60"
