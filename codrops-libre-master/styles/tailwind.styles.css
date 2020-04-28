@@ -2,6 +2,9 @@
 
 @tailwind components;
 
+.test {
+  @apply bg-orange-800;
+}
 .transition-normal {
   transition: all 200ms ease;
 }
